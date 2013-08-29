@@ -4,12 +4,17 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.bson.types.ObjectId;
+
 import com.google.code.morphia.annotations.Embedded;
 import com.google.code.morphia.annotations.Entity;
+import com.google.code.morphia.annotations.Id;
 
-@Entity
-public class DatasetEntity {
 
+public class ResultAtom {
+
+
+	
 	private String title;
 	
 	private Integer queryNumber;

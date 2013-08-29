@@ -6,11 +6,12 @@ import com.google.code.morphia.Morphia;
 import com.google.code.morphia.dao.BasicDAO;
 import com.mongodb.Mongo;
 
-import foo.dbgroup.mongo.entity.DatasetEntity;
 
-public class DataseEntityDAO extends BasicDAO<DatasetEntity, ObjectId> {
+import foo.dbgroup.mongo.entity.DatasetResult;
 
-	protected DataseEntityDAO(Mongo mongo, Morphia morphia) {
+public class DatasetResultDAO extends BasicDAO<DatasetResult, ObjectId> {
+
+	public DatasetResultDAO(Mongo mongo, Morphia morphia) {
 		super(mongo, morphia, "RDFstruct");
 		// TODO Auto-generated constructor stub
 	}

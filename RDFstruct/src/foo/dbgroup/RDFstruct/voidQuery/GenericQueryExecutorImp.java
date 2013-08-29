@@ -14,17 +14,18 @@ import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
-import foo.dbgroup.mongo.entity.DatasetEntity;
+
 import foo.dbgroup.mongo.entity.DatasetResult;
 import foo.dbgroup.mongo.entity.DoubleResult;
 import foo.dbgroup.mongo.entity.GenericQuery;
+import foo.dbgroup.mongo.entity.ResultAtom;
 
 public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor<T> {
 
 	private GenericQuery query;
 	private ResultSet results;
 	String html="";
-	private DatasetEntity entity;
+	private ResultAtom entity;
 	private DatasetResult result;
 	
 	
@@ -32,7 +33,7 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 	@Override
 	public void setQuery(GenericQuery q) {
 		query=q;
-		DatasetEntity current = new DatasetEntity();
+		ResultAtom current = new ResultAtom();
 		current.setTitle(q.getTitle());
 		current.setQueryNumber(q.getNumber());
 		current.setTime(new Date());
@@ -54,6 +55,7 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 					html+="  --  ";
 				}
 				String cur=a.toString().replaceAll("\\^\\^http://www.w3.org/2001/XMLSchema#integer", "");
+				cur=cur.replaceAll("\\^\\^http://www.w3.org/2001/XMLSchema#int", "");
 				System.out.print(cur);
 				html+=cur;
 				
@@ -74,13 +76,15 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 			}
 			System.out.print("\n");
 			html+="\n";
-			getResult().addEntity(getEntity());
+			
 		}
+		getResult().addEntity(getEntity());
 		}else{
 			
 			System.out.print("\n");
 			html+="\n";
 		}
+		setEntity(null);
 		
 	}
 
@@ -129,20 +133,20 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 
 
 
-	public DatasetEntity getEntity() {
+	public ResultAtom getEntity() {
 		return entity;
 	}
 
 
 
-	public void setEntity(DatasetEntity entity) {
+	public void setEntity(ResultAtom entity) {
 		this.entity = entity;
 	}
 	
 	public void saveToMongo(Datastore ds){
 		ds.save(getResult());
-		DatasetResult a = new DatasetResult();
-		setResult(a);
+		
+		setResult(null);
 	}
 
 

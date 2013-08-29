@@ -3,19 +3,25 @@ package foo.dbgroup.mongo.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.bson.types.ObjectId;
+
 import com.google.code.morphia.annotations.Embedded;
 import com.google.code.morphia.annotations.Entity;
+import com.google.code.morphia.annotations.Id;
 
 @Entity
 public class DatasetResult {
 
+	@Id
+	private ObjectId id;
+	
 	private String uri;
 	
 	private String name;
 
 	@Embedded
 	private
-	List<DatasetEntity> queryResult;
+	List<ResultAtom> queryResult;
 	
 	public String getUri() {
 		return uri;
@@ -33,16 +39,16 @@ public class DatasetResult {
 		this.name = name;
 	}
 
-	public List<DatasetEntity> getQueryResult() {
+	public List<ResultAtom> getQueryResult() {
 		return queryResult;
 	}
 
-	public void setQueryResult(List<DatasetEntity> queryResult) {
+	public void setQueryResult(List<ResultAtom> queryResult) {
 		this.queryResult = queryResult;
 	}
 	
-	public void addEntity(DatasetEntity element) {
-		if(queryResult == null) queryResult=new ArrayList<DatasetEntity>();
+	public void addEntity(ResultAtom element) {
+		if(queryResult == null) queryResult=new ArrayList<ResultAtom>();
 		queryResult.add(element);
 	}
 }

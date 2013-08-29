@@ -17,7 +17,7 @@ import foo.dbgroup.RDFstruct.voidQuery.QueryExecutorRemote;
 import foo.dbgroup.mongo.entity.EndPointSparql;
 import foo.dbgroup.mongo.entity.GenericQuery;
 
-public class TTTT {
+public class PopulateDatasetResult {
 
 	public static void main(String[] args) {
 //		VirtuosoLocalProvider a = new VirtuosoLocalProvider("SnomedCT","dba","dba");

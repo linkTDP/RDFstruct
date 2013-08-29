@@ -1,5 +1,7 @@
 package foo.dbgroup.mongo.entity;
 
+import org.bson.types.ObjectId;
+
 import com.google.code.morphia.annotations.Entity;
 import com.google.code.morphia.annotations.Id;
 
@@ -8,11 +10,17 @@ import com.google.code.morphia.annotations.Id;
 public class EndPointSparql {
 	
 	@Id
+	private ObjectId id;
+	
 	private String uri;
 	
 	private String nome;
 	
 	
+
+	public EndPointSparql() {
+		super();
+	}
 
 	public EndPointSparql(String uri, String nome) {
 		super();
@@ -34,6 +42,14 @@ public class EndPointSparql {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public ObjectId getId() {
+		return id;
+	}
+
+	public void setId(ObjectId id) {
+		this.id = id;
 	}
 	
 	
