@@ -1,0 +1,1911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:adms="http://www.w3.org/ns/adms#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+  <adms:SemanticAssetRepository rdf:about="http://vocab.deri.ie">
+    <dcterms:title>DERI Vocabularies</dcterms:title>
+    <dcterms:description>&lt;p&gt;&lt;a href=&quot;http://vocab.deri.ie/&quot;&gt;DERI Vocabularies&lt;/a&gt; is a URI space for RDF Schema vocabularies and OWL ontologies maintained at &lt;a href=&quot;http://deri.ie/&quot;&gt;DERI&lt;/a&gt;, the Digital Enterprise Research Institute at &lt;a href=&quot;http://www.nuigalway.ie/&quot;&gt;NUI Galway&lt;/a&gt;, Ireland. The site is operated by DERI's &lt;a href=&quot;http://linkeddata.deri.ie/&quot;&gt;Linked Data Research Centre&lt;/a&gt;. &lt;em&gt;&lt;a href=&quot;about&quot;&gt;Read more…&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</dcterms:description>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-26</dcterms:created>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-26</dcterms:modified>
+    <adms:accessURL>http://vocab.deri.ie</adms:accessURL>
+    <adms:supportedSchema>ADMS v1.0</adms:supportedSchema>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/void"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/scovo"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/chartr"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/dady"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/am"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/c4n"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/sdmx"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/xfn"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/aardv"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/acronym"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/smail"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/sigma"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/dcat"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/ppmo"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/yoda"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/xps"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/lmf"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/orgs"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/tao"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/sdg"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/test"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/security"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/scovolink"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/rooms"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/sparqlpush"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/entity-action"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/pdo"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/diff"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/rulz"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/raul"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/cloudisus"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/printTracking"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/search"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/team"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/travel"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/commute"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/emissions"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/sustainabilityTaxonomy"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/nocal"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/ppo"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/cordis"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/rdforms"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/scovo-plus"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/csp"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/push"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/cogs"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/w3p"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/events"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/corelf"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/LinkSpec"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/br"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/fingal"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/scsv"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/grefine"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/rdb2rdftc"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/admsapi"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/cap"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/bp"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/av"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/odapp"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/orca"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/lexinfo"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/co"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/capo"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/wsapo"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/cpo"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/papp"/>
+    <dcterms:hasPart rdf:resource="http://vocab.deri.ie/rentprop"/>
+  </adms:SemanticAssetRepository>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/void">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Vocabulary of Interlinked Datasets (VoID)</dcterms:title>
+    <dcterms:description>The Vocabulary of Interlinked Datasets (VoID) is an RDF Schema vocabulary for expressing metadata about RDF datasets. It is intended as a bridge between the publishers and users of RDF data, with applications ranging from data discovery to cataloging and archiving of datasets. This document provides a formal definition of the new RDF classes and properties introduced for VoID. It is a companion to the main specification document for VoID, &lt;em&gt;&lt;a href=&quot;http://www.w3.org/TR/void/&quot;&gt;Describing Linked Datasets with the VoID Vocabulary&lt;/a&gt;&lt;/em&gt;.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-06</dcterms:modified>
+    <vann:preferredNamespaceUri>http://rdfs.org/ns/void#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>void</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/void.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-26</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/void#Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/void#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/void.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/void#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/void.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/scovo">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>The Statistical Core Vocabulary (SCOVO)</dcterms:title>
+    <dcterms:description>A vocabulary for representing statistical data on the Web.
+
+&lt;div style=&quot;border: 2px solid red; padding: 0.4em 0.7em; background: #fcc&quot;&gt;Note: The SCOVO vocabulary is deprecated. We strongly advise to use the &lt;a href=&quot;http://www.w3.org/TR/vocab-data-cube/&quot;&gt;Data Cube Vocabulary&lt;/a&gt; instead.&lt;/div&gt;</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-08-09</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/NET/scovo#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>scovo</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/scovo.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-26</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/scovo#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/scovo#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/scovo.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/scovo#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/scovo.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/chartr">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Chartr - the chart vocabulary</dcterms:title>
+    <dcterms:description>Allows to represent charts such as bar charts, pie charts, etc along with their components (slices, labels, etc.).</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-01-21</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/NET/chartr#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>chartr</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/chartr.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-26</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/chartr#Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/chartr#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/chartr.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/chartr#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/chartr.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/dady">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Dataset Dynamics (dady) vocabulary</dcterms:title>
+    <dcterms:description>A vocabulary that allows for coarse-grained descriptions of the data-source dynamics as well as the discovery of change notification mechanism(s).</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-27</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/NET/dady#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>dady</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/dady.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-27</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/dady#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/dady#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/dady.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/dady#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/dady.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/am">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Application Metadata (AM) vocabulary</dcterms:title>
+    <dcterms:description>A vocabulary to describe (Web) applications, to be used together with DOAP.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-27</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/am#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>am</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/am.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-27</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/am#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/am#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/am.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/am#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/am.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/c4n">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Call for Anything vocabulary</dcterms:title>
+    <dcterms:description>A vocabulary to describe calls, such as call for tenders, call for proposals, call for papers, etc.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-04</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/c4n#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>c4n</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/c4n.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-04</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/c4n#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/c4n#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/c4n.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/c4n#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/c4n.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/sdmx">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>SDMX in RDF Vocabulary</dcterms:title>
+    <dcterms:description>This is a doodle about representing SDMX data in RDF, based on SCOVO. This is not officially affiliated with SDMX in any way.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-19</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/sdmx#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>sdmx</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/sdmx.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-05</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/sdmx#Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/sdmx#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/sdmx.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/sdmx#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/sdmx.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/xfn">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>XFN in RDF: Vocabulary Specification</dcterms:title>
+    <dcterms:description>This is an RDFS and OWL vocabulary for expressing XFN microformat data in RDF. It defines a set of RDF properties that represent different social relationships between two people, like friend, co-worker or sweetheart. The relationship types are originally defined by the XFN microformat.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-11</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.sindice.com/xfn#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>xfn</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/xfn.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-11</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/xfn#Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/xfn#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/xfn.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/xfn#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/xfn.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/aardv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Abstract Resource Description Vocabulary (aardv)</dcterms:title>
+    <dcterms:description>The 'Abstract Resource Description Vocabulary' (aardv) is the least common denominator for the discovery vocabularies XRD, POWDER, and voiD.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-12</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/aardv#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>aardv</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/aardv.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-12</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/aardv#DERI</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/aardv#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/aardv.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/aardv#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/aardv.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/acronym">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>ACRONYM Ontology</dcterms:title>
+    <dcterms:description>The Annotation CReatiON for Your Media (ACRONYM) ontology&amp;#039;s purpose is to lend context from the real-world (Ambient Intelligence) to the creation of resources. More specifically, it can be used to capture the presence of relevant wireless devices at the time of resource creation. This ontology&amp;#039;s original purpose is to be integrated with other ontologies from social networking, multimedia, geography and context-awareness to aid the semi-automatic annotation of media, but more generally it can be used for Ambient Intelligence applications. For example, it can be used to capture the unique Bluetooth addresses of devices near a cameraphone at the time of photograph capture and later link those addresses to the people that own those devices. Alternatively, it can be used to track the RFID addresses of products in a factory and update their status in an information system. The ontology is open to and welcomes extension with various other types of wireless addressing protocols/formats and application-specific semantics.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-12</dcterms:modified>
+    <vann:preferredNamespaceUri>http://acronym.deri.org/schema#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>acronym</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/acronym.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-12</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/acronym#Digital%20Enterprise%20Research%20Institute</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/acronym#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/acronym.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/acronym#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/acronym.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/smail">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>SMAIL Vocabulary</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-12</dcterms:modified>
+    <vann:preferredNamespaceUri>http://ontologies.smile.deri.ie/smail#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>smail</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/smail.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-12</dcterms:created>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/smail#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/smail.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/smail#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/smail.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/sigma">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Sigma EE Configuration Language</dcterms:title>
+    <dcterms:description>This is a draft for the Sigma EE Configuration Language.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-16</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/sigma#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>sigma</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/sigma.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-16</dcterms:created>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/sigma#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/sigma.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/sigma#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/sigma.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/dcat">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Data Catalog Vocabulary (dcat)</dcterms:title>
+    <dcterms:description>&lt;p style=&quot;border:2px solid red;background:yellow;padding:1em;font-weight:bold&quot;&gt;&lt;strong&gt;Work on DCAT has moved to W3C. This document is now deprecated in favour of &lt;a style=&quot;text-decoration:underline&quot; href=&quot;http://www.w3.org/TR/vocab-dcat/&quot;&gt;the W3C version&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+This document defines an RDF vocabulary for the exchange of data catalogs. Its primary purpose is the expression of government data catalogs, such as data.gov or data.gov.uk, in RDF. It is being produced by the W3C eGovernment Interest Group. This is an early draft. We welcome feedback and discussion.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-05-03</dcterms:modified>
+    <vann:preferredNamespaceUri>http://www.w3.org/ns/dcat#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>dcat</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/dcat.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-02-17</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/dcat#Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/dcat#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/dcat.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/dcat#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/dcat.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/ppmo">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Privacy Preference Manager Ontology (PPMO)</dcterms:title>
+    <dcterms:description>An ontology to describe privacy preference manager configuration settings including assigning administration rights</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-05-22</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/ppmo#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>ppmo</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/ppmo.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-04-27</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/ppmo#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/ppmo#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/ppmo.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/ppmo#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/ppmo.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/yoda">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Profiles properties</dcterms:title>
+    <dcterms:description>This describes a vocabulary for routing Semantic Web tools toward an appropriate version, depending on the needs of the tool. For instance, it can be used to provide a DL-compatible version of an otherwise non-DL ontology.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-04</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/NET/yoda#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>yoda</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/yoda.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-04</dcterms:created>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/yoda#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/yoda.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/yoda#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/yoda.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/xps">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Expenses vocabulary</dcterms:title>
+    <dcterms:description>A vocabulary for representing a person's expenses.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-02</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/xps#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>xps</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/xps.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-02</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/xps#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/xps#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/xps.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/xps#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/xps.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/lmf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Lexical Markup Framework Ontology version 14</dcterms:title>
+    <dcterms:description>Specification of Lexical Markup Framework (ISO 24613 rev 14)</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-12</dcterms:modified>
+    <vann:preferredNamespaceUri>http://www.lexinfo.net/lmf#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>lmf</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/lmf.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-12</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/lmf#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/lmf#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/lmf.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/lmf#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/lmf.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/orgs">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Organizational Structure Vocabulary</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-04</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/orgs#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>orgs</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/orgs.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-04</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/orgs#Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/orgs#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/orgs.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/orgs#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/orgs.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/tao">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Trust Assertion Ontology (TAO)</dcterms:title>
+    <dcterms:description>A light-weight vocabulary to describe asserted user’s subjective trust values.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-18</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/tao#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>tao</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/tao.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-18</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/tao#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/tao#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/tao.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/tao#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/tao.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/sdg">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Structured Discourse Graph Vocabulary</dcterms:title>
+    <dcterms:description>Vocabulary for representing relations on Structured Discourse Graphs (SDGs). Please refer to the paper below for the motivation behind the use of SDGs:
+
+André Freitas, Danilo S. Carvalho, João Carlos Pereira da Silva, Sean O&amp;#039;Riain, Edward Curry, A Semantic Best-Effort Approach for Extracting Structured Discourse Graphs from Wikipedia. In Proceedings of the 1st Workshop on the Web of Linked Entities (WoLE 2012) at the 11th International Semantic Web Conference (ISWC), 2012</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-21</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/sdg#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>sdg</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/sdg.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-21</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/sdg#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/sdg#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/sdg.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/sdg#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/sdg.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/test">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>This is an experimental test ontology</dcterms:title>
+    <dcterms:description>This is a test ontology for experimental purposes.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-24</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/test#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>test</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/test.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-24</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/test#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/test#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/test.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/test#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/test.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/security">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Security Ontology</dcterms:title>
+    <dcterms:description>This defines an ontology aiming to exchange information about classified activities.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-24</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/security#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>security</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/security.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-24</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/security#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/security#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/security.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/security#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/security.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/scovolink">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>SCOVO Link Vocabulary</dcterms:title>
+    <dcterms:description>SCOVO Link allows the grounding of SCOVO entities in existing vocabularies. Authors are: Denny Vrandecic, Christoph Lange, Michael Hausenblas, Jie Bao  and Li Ding.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-04-28</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/scovolink#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>scovolink</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/scovolink.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-04-28</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/scovolink#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/scovolink#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/scovolink.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/scovolink#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/scovolink.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/rooms">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Buildings and Rooms Vocabulary</dcterms:title>
+    <dcterms:description>A simple vocabulary for describing the rooms in a building.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-10-02</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/rooms#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>rooms</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/rooms.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-04-15</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/rooms#Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/rooms#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/rooms.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/rooms#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/rooms.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/sparqlpush">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>The sparqlPuSH vocabulary</dcterms:title>
+    <dcterms:description>Vocabulary used in sparqlPuSH - http://code.google.com/p/sparqlpush/</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-05-10</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/sparqlpush#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>sparqlpush</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/sparqlpush.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-05-10</dcterms:created>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/sparqlpush#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/sparqlpush.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/sparqlpush#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/sparqlpush.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/entity-action">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>The Entity-Action vocabulary</dcterms:title>
+    <dcterms:description>Allows to map entities to actions that can be performed on them. See also http://lab.linkeddata.deri.ie/alodin/agent/ and http://code.google.com/p/alodin/</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-05-04</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/NET/entity-actions#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>entity-act</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/entity-action.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-05-04</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/entity-action#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/entity-action#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/entity-action.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/entity-action#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/entity-action.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/pdo">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Project Documents Ontology</dcterms:title>
+    <dcterms:description>The Project Documents Ontology, described using W3C RDF Schema and the Web Ontology Language, models the inherent structure and concepts of various documents in a project-specific setting, like meeting minutes, status reports etc.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-09</dcterms:modified>
+    <vann:preferredNamespaceUri>http://ontologies.smile.deri.ie/pdo#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>pdo</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/pdo.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-09</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/pdo#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/pdo#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/pdo.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/pdo#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/pdo.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/diff">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>DIFF Vocabulary</dcterms:title>
+    <dcterms:description>This vocabulary defines a set of terms for describing changes (diffs) to plain text documents.
+It can be used for example to model diffs between wiki page revisions.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-01-13</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/diff#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>diff</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/diff.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-09-07</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/diff#DERI</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/diff#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/diff.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/diff#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/diff.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/rulz">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Rulz - the Rules in the Web Zoo</dcterms:title>
+    <dcterms:description>A vocabulary to describe rules (RIF, N3, Prolog, etc.) in the Web, which enables to effectively and efficiently discover rules in any format, based on topics, language, goals, etc.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-06-24</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/NET/rulz#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>rulz</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/rulz.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-06-24</dcterms:created>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/rulz#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/rulz.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/rulz#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/rulz.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/raul">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>RAUL Vocabulary</dcterms:title>
+    <dcterms:description>A vocabulary to describe Web form widgets. Strongly aligned with the meta model of HTML Web forms. A RESTful service that can render HTML Web forms from RaUL models can be found at: http://w3c.org.au/raul</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-04-30</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/NET/raul#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>raul</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/raul.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-06-30</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/raul#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/raul#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/raul.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/raul#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/raul.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/cloudisus">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Cloud Is Us Processing Vocabulary</dcterms:title>
+    <dcterms:description>Defines terms used for distributed processing of datasets such as jobs and contributors.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-20</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/NET/cloudisus#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>cloudisus</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/cloudisus.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-20</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/cloudisus#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/cloudisus#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/cloudisus.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/cloudisus#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/cloudisus.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/printTracking">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Print Tracking Vocabulary</dcterms:title>
+    <dcterms:description>The printTracking ontology could be used to represent data coming from the usual print auditing siftware. One possible use case is to use the data along with data from other data sources in the organization to prepare sustainability reports in the organization. </dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-09-25</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/printTracking#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>printTrack</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/printTracking.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-09-25</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/printTracking#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/printTracking#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/printTracking.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/printTracking#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/printTracking.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/search">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Sindice Search Vocabulary</dcterms:title>
+    <dcterms:description>A vocabulary for ranked search results, for use in the Sindice API.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-09-26</dcterms:modified>
+    <vann:preferredNamespaceUri>http://sindice.com/vocab/search#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>search</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/search.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-09-26</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/search#Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/search#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/search.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/search#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/search.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/team">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>DERI Team Vocabulary</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-14</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/team#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>team</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/team.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-14</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/team#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/team#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/team.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/team#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/team.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/travel">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>TRAVEL Vocabulary</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-18</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/travel#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>travel</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/travel.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-18</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/travel#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/travel#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/travel.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/travel#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/travel.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/commute">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Commute Vocabulary</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-11-04</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/commute#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>commute</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/commute.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-15</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/commute#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/commute#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/commute.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/commute#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/commute.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/emissions">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Emissions Vocabulary</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-14</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/emissions#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>emissions</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/emissions.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-14</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/emissions#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/emissions#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/emissions.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/emissions#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/emissions.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/sustainabilityTaxonomy">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Sustainability Taxonomy</dcterms:title>
+    <dcterms:description>This taxonomy defines the sustainability KPI's that DERI, and potentially other organizations, would use to report its sustainability performance. It also defines the main dimensions (axes) according to DERI would report.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-04-07</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/sustainabilityTaxonomy#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>sustainabi</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/sustainabilityTaxonomy.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-11-04</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/sustainabilityTaxonomy#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/sustainabilityTaxonomy#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/sustainabilityTaxonomy.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/sustainabilityTaxonomy#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/sustainabilityTaxonomy.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/nocal">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>NoCal: Just some simple dates and times</dcterms:title>
+    <dcterms:description>A simple vocabulary for generic start times, end times, start date-times, end date-times, and duration.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-01-26</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/nocal#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>nocal</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/nocal.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-01-26</dcterms:created>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/nocal#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/nocal.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/nocal#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/nocal.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/ppo">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Privacy Preference Ontology (PPO)</dcterms:title>
+    <dcterms:description>An ontology to create privacy preferences for Linked Data</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-04-27</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/ppo#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>ppo</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/ppo.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-02-15</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/ppo#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/ppo#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/ppo.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/ppo#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/ppo.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/cordis">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Community Research and Development Information Service (CORDIS)</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-04</dcterms:modified>
+    <vann:preferredNamespaceUri>http://www4.wiwiss.fu-berlin.de/cordis/resource/cordis/</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>cordis</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/cordis.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-04</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/cordis#FU%20Berlin</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/cordis#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/cordis.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/cordis#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/cordis.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/rdforms">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>RDForms - representing HTML form and field semantics</dcterms:title>
+    <dcterms:description>A vocabulary that defines how to represent HTML forms and fields (input, select, etc.) and CRUD operations on the fields. See http://esw.w3.org/topic/PushBackDataToLegacySourcesRDForms for more details.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-08</dcterms:modified>
+    <vann:preferredNamespaceUri>http://rdfs.org/ns/rdforms#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>rdforms</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/rdforms.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-08</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/rdforms#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/rdforms#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/rdforms.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/rdforms#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/rdforms.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/scovo-plus">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>The Statistical Core Vocabulary Plus (SCOVO-Plus)</dcterms:title>
+    <dcterms:description>This document specifies an extended version of SCOVO, a vocabulary for representing statistical data on the Web. The extension covers aggregates of dimensions.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-08</dcterms:modified>
+    <vann:preferredNamespaceUri>http://rdfs.org/ns/scovo-plus#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>scovo-plus</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/scovo-plus.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-08</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/scovo-plus#DERI</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/scovo-plus#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/scovo-plus.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/scovo-plus#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/scovo-plus.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/csp">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>CSP - A vocabulary to represent Constraint Satisfaction Problems.</dcterms:title>
+    <dcterms:description>A vocabulary to represent Constraint Satisfaction Problems (CSPs) in which constraints are expressed by Boolean expressions on fluents.&lt;/b&gt;</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-29</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/csp#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>csp</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/csp.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-09</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/csp#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/csp#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/csp.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/csp#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/csp.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/push">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Push Vocabulary for PubSubHubbub in SMOB</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-30</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/push#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>push</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/push.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-29</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/push#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/push#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/push.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/push#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/push.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/cogs">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>COGS Vocabulary</dcterms:title>
+    <dcterms:description>COGS: Vocabulary for describing ETL and data transformation activities.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-25</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/cogs#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>cogs</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/cogs.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-02-25</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/cogs#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/cogs#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/cogs.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/cogs#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/cogs.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/w3p">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>W3P Vocabulary</dcterms:title>
+    <dcterms:description>W3P Provenance Ontology</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-19</dcterms:modified>
+    <vann:preferredNamespaceUri>http://prov4j.org/w3p/schema#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>w3p</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/w3p.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-19</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/w3p#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/w3p#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/w3p.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/w3p#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/w3p.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/events">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>EVENTS Vocabulary</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-09-21</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/deri-dgsit/events#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>events</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/events.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-09-21</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/events#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/events#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/events.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/events#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/events.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/corelf">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>CORE Link Format</dcterms:title>
+    <dcterms:description>This vocabulary specifies terms for use by constrained devices to describe hosted resources, their attributes and other relationships between links.</dcterms:description>
+    <dc:license>http://creativecommons.org/publicdomain/zero/1.0/</dc:license>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-15</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/NET/corelf#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>corelf</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/corelf.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-15</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/corelf#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/corelf#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/corelf.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/corelf#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/corelf.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+    <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/LinkSpec">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Specification of Linkset Generation</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-16</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/LinkSpec#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>LinkSpec</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/LinkSpec.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-16</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/LinkSpec#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/LinkSpec#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/LinkSpec.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/LinkSpec#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/LinkSpec.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/br">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Brainstorm Ontology</dcterms:title>
+    <dcterms:description>A lightweight ontology to structure e- brainstorming sessions</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-07-09</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/br#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>br</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/br.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-25</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/br#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/br#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/br.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/br#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/br.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/fingal">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Terms needed for RDF-izing Fingal catalogue available at http://data.fingal.ie</dcterms:title>
+    <dcterms:description>Terms needed for RDF-izing Fingal catalogue available at http://data.fingal.ie . as a result of the heterogeneity of the datasets the vocabulary is not very coherent</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-07-05</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/fingal#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>fingal</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/fingal.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-05-10</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/fingal#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/fingal#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/fingal.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/fingal#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/fingal.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/scsv">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Schema.org CSV</dcterms:title>
+    <dcterms:description>Mapping vocabulary for CSV files that use Schema.org terms in the header.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-05-22</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/NET/schema-org-csv#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>scsv</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/scsv.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-10</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/scsv#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/scsv#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/scsv.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/scsv#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/scsv.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/grefine">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Google Refine provenance vocabulary</dcterms:title>
+    <dcterms:description>This vocabulary defines terms needed to describe provenance of RDF data exported using &lt;a href=&quot;http://lab.linkeddata.deri.ie/2010/grefine-rdf-extension/&quot;&gt;RDF Extension for Google Refine&lt;/a&gt;. It uses the &lt;a href=&quot;http://open-biomed.sourceforge.net/opmv/ns.html#&quot;&gt;Open Provenance Model Vocabulary (OPVM)&lt;/a&gt;. &lt;b&gt;This vocabulary is a simplified and less-complete version of &lt;a href=&quot;http://purl.org/net/opmv/types/gridworks#&quot;&gt;gridworks vocabulary&lt;/a&gt; defined by &lt;a href=&quot;http://www.jenitennison.com&quot;&gt;Jeni Tennison&lt;/a&gt;&lt;/b&gt;</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-06</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/grefine#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>grefine</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/grefine.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-02</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/grefine#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/grefine#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/grefine.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/grefine#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/grefine.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/rdb2rdftc">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>W3C RDB2RDF Test Case vocabulary</dcterms:title>
+    <dcterms:description>This vocabulary defines a set of metadata elements for modelling the RDB2RDF test cases.
+</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-07-18</dcterms:modified>
+    <vann:preferredNamespaceUri>http://purl.org/NET/rdb2rdf-test#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>rdb2rdftc</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/rdb2rdftc.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-07-18</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/rdb2rdftc#LiDRC</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/rdb2rdftc#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/rdb2rdftc.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/rdb2rdftc#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/rdb2rdftc.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/admsapi">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>ADMS API Vocabulary</dcterms:title>
+    <dcterms:description>This a vocabulary used in the RESTful ADMS Exchange API </dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-07-13</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/admsapi#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>admsapi</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/admsapi.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-15</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/admsapi#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/admsapi#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/admsapi.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/admsapi#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/admsapi.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/cap">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Capability Meta Model</dcterms:title>
+    <dcterms:description>This is a capability meta-model that is presented as an rdf schema for describing capabilities as an action verb and a set of attributes. Additionaly, this schema defines the possible attribute value types that can be considered when modelling capabilities: ConditionalValue, ConstrainedValue, EnumerationValue, DynamicValue and RangeValue.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-09-27</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/cap#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>cap</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/cap.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-09-27</dcterms:created>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/cap#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/cap.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/cap#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/cap.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/bp">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Business Process Vocabulary</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-12-19</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/bp#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>bp</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/bp.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-10-04</dcterms:created>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/bp#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/bp.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/bp#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/bp.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/av">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>ActionVerb Schema</dcterms:title>
+    <dcterms:description>This is an rdf schema for defining an ActionVerb. It defines the concept ActionVerb as an rdfs:subClassOf skos:Concept. It defines for this concept three properties: (1) av:hasPart which is an rdf:Property (2) av:hasOptionalPart which is an rdf:Property, both of them are used to create meronymy relations between ActionVerbs and (3) av:hasLevel which is an owl:DatatypeProperty that indicates the level of the current action verb in the hierachy built using the two previous properties.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-10-01</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/av#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>av</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/av.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-09-27</dcterms:created>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/av#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/av.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/av#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/av.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/odapp">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Open Data Applications Vocabulary</dcterms:title>
+    <dcterms:description>This is an early version of a vocabulary to describe &quot;open data applications&quot; i.e. applications built using open data. Examples of such applications are listed on government open data catalogues and participant on open data competitions.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-07-17</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/odapp#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>odapp</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/odapp.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-07-04</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/odapp#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/odapp#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/odapp.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/odapp#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/odapp.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/orca">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>orca, the Ontology of Reasoning, Certainty and Attribution</dcterms:title>
+    <dcterms:description>orca, the Ontology of Reasoning, Certainty and Attribution, is an ontology for characterizing the certainty of information, how it is known, and its source</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-11-09</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/orca#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>orca</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/orca.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-07-19</dcterms:created>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/orca#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/orca.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/orca#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/orca.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/lexinfo">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>LEXINFO Vocabulary</dcterms:title>
+    <dcterms:description>LexInfo builds on the lemon model to represent lexical information attached to ontologies on the semantic web. LexInfo has been developed at CITEC, DERI and DFKI and UPM. -- FOR UPDATES AND NEWER VERSIONS PLEASE CHECK http://lexinfo.net</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-08-03</dcterms:modified>
+    <vann:preferredNamespaceUri>http://www.lexinfo.net/ontology/2.0/lexinfo#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>lexinfo</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/lexinfo.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-08-03</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/lexinfo#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/lexinfo#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/lexinfo.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/lexinfo#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/lexinfo.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/co">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Credentials Ontology</dcterms:title>
+    <dcterms:description>The Credentials Vocabulary (CO) is a light weight vocabulary for Semantic OAuth to describe three types of credentials: 1) temporary or request token credentials; 2) client credentials; and 3) access token credentials.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-05-02</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/co#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>co</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/co.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-05-02</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/co#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/co#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/co.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/co#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/co.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/capo">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Client Authorisation Preferences Ontology (CAPO)</dcterms:title>
+    <dcterms:description>The Client Authorisation Preferences Ontology (CAPO) is a light weight vocabulary that describes client details which are stored within the Authorisation Server. These details are created once a client (for example a third party application) is registered with the Authorisation Server.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-05-02</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/capo#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>capo</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/capo.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-05-02</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/capo#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/capo#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/capo.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/capo#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/capo.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/wsapo">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Web Service Authorisation Preferences Ontology (WSAPO)</dcterms:title>
+    <dcterms:description>The Web Service Authorisation Preferences Ontology (WSAPO) is a light weight vocabulary that describes the details of the Web Service Authorisation component which are stored on the client side. These details are used by the client during the authorisation process.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-05-02</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/wsapo#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>wsapo</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/wsapo.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-05-02</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/wsapo#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/wsapo#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/wsapo.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/wsapo#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/wsapo.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/cpo">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Client Permissions Ontology (CPO)</dcterms:title>
+    <dcterms:description>The Client Permissions Ontology (CPO) is a light weight vocabulary that describes the scope and permissions which the resource owner grants to the client.</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-05-02</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/cpo#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>cpo</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/cpo.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-05-02</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/cpo#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/cpo#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/cpo.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/cpo#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/cpo.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/papp">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Planning application vocabulary</dcterms:title>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-07-01</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/papp#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>papp</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/papp.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-06-30</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/papp#Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/papp#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/papp.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/papp#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/papp.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <owl:Ontology rdf:about="http://vocab.deri.ie/rentprop">
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#SemanticAsset"/>
+    <dcterms:title>Rent Properties</dcterms:title>
+    <dcterms:description>This vocabulary is used to describe rent properties documents</dcterms:description>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-07-19</dcterms:modified>
+    <vann:preferredNamespaceUri>http://vocab.deri.ie/rentprop#</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>rentprop</vann:preferredNamespacePrefix>
+    <foaf:homepage rdf:resource="http://vocab.deri.ie/rentprop.html"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-07-19</dcterms:created>
+    <dcterms:publisher>http://vocab.deri.ie/rentprop#DERI%2C%20NUI%20Galway</dcterms:publisher>
+    <dcterms:partOf rdf:resource="http://vocab.deri.ie"/>
+    <dcterms:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+    <dcterms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+  </owl:Ontology>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/rentprop#ttl">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/rentprop.ttl</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+  <adms:SemanticDistribution rdf:about="http://vocab.deri.ie/rentprop#rdf">
+    <dcterms:FileFormat></dcterms:FileFormat>
+    <adms:accessURL>http://vocab.deri.ie/rentprop.rdf</adms:accessURL>
+    <adms:status rdf:resource="http://purl.org/adms/status/Completed"/>
+  </adms:SemanticDistribution>
+
+</rdf:RDF>
