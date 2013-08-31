@@ -8,6 +8,7 @@ import com.mongodb.MongoClient;
 public class MongoConnect {
 	
 	MongoClient mongoClient;
+	DB db;
 
 	public MongoConnect() {
 		super();
@@ -17,7 +18,11 @@ public class MongoConnect {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		DB db = mongoClient.getDB( "RDFstruct" );
+		db = mongoClient.getDB( "RDFstruct" );
+	}
+	
+	public DB getDb(){
+		return db;
 	}
 	
 	

@@ -39,18 +39,24 @@ public class QueryExecutorRemote extends GenericQueryExecutorImp<String> {
 			Query sparql = QueryFactory.create(this.getQuery().getQuery());
 			
 			QueryExecution qe = QueryExecutionFactory.sparqlService(dataset, sparql);
-			qe.setTimeout(20000, TimeUnit.MILLISECONDS);
+			qe.setTimeout(50000, TimeUnit.MILLISECONDS);
 			ResultSet curresult=qe.execSelect();
 			setResultSet(curresult);
 		}catch(Exception e){
 			System.out.println(e.getMessage());
-//			for ( StackTraceElement ele : e.getStackTrace())System.out.println(ele.getMethodName()+"   "+ele.getLineNumber());
+			String trace="";
+			for ( StackTraceElement ele : e.getStackTrace()){
+				trace=trace+(ele.getClassName()+"."+ele.getClassName()+" "+ele.getLineNumber()+"\n");
+			}
+//			System.out.println(trace);
 //			
-//			System.out.println(e.getStackTrace());
+//			System.out.println(e.getStackTrace().toString());
+			
 			
 			ResultAtom a=getEntity();
 			
 			a.setError(e.getMessage());
+			a.setTrace(trace);
 			setEntity(a);
 			getResult().addEntity(getEntity());
 			html+=e.getMessage();

@@ -12,9 +12,11 @@ import com.mongodb.MongoClient;
 
 import foo.dbgroup.RDFstruct.voidQuery.BuildVoidQuery;
 import foo.dbgroup.RDFstruct.voidQuery.QueryExecutorRemote;
+import foo.dbgroup.mongo.dao.EndpointSparqlDAO;
+import foo.dbgroup.mongo.entity.EndPointSparql;
 import foo.dbgroup.mongo.entity.GenericQuery;
 
-public class BugFix {
+public class ResultFromSelectedEndpoint {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -41,10 +43,17 @@ public class BugFix {
 			e.printStackTrace();
 		}
 		
-		
-		exe.setDataset("http://dati.senato.it/sparql","Senato della Repubblica");
-		
 		Morphia morphia = new Morphia();
+		
+		EndpointSparqlDAO dao = new EndpointSparqlDAO(mongo, morphia);
+		
+		//*******************************************
+		
+		EndPointSparql e=dao.findOne("id", 15);
+		
+		exe.setDataset(e.getUri(),e.getNome());
+		
+		
 		
 		Datastore ds = morphia.createDatastore(mongo, "RDFstruct");
 		

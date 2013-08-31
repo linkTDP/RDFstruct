@@ -25,6 +25,8 @@ public class ResultAtom {
 	
 	private String error;
 	
+	private String trace;
+	
 	private Date time;
 	
 	@Embedded
@@ -97,6 +99,14 @@ public class ResultAtom {
 
 	public void setTime(Date time) {
 		this.time = time;
+	}
+
+	public String getTrace() {
+		return trace;
+	}
+
+	public void setTrace(String trace) {
+		this.trace = trace;
 	}
 	
 	

@@ -151,7 +151,7 @@ public class LunchSite {
 					Writer writer) throws IOException, TemplateException {
 				String id = request.params(":id");
 				
-				ObjectId o=new ObjectId(id);
+				Integer o=new Integer(Integer.parseInt(id));
 				EndPointSparql end=endDao.findOne("id", o);
 				
 				DatasetResult d=daDao.findOne("uri", end.getUri());

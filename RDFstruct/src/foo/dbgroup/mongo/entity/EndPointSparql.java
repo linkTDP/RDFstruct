@@ -10,7 +10,7 @@ import com.google.code.morphia.annotations.Id;
 public class EndPointSparql {
 	
 	@Id
-	private ObjectId id;
+	private Integer id;
 	
 	private String uri;
 	
@@ -22,10 +22,11 @@ public class EndPointSparql {
 		super();
 	}
 
-	public EndPointSparql(String uri, String nome) {
+	public EndPointSparql(String uri, String nome, Integer id) {
 		super();
 		this.uri = uri;
 		this.nome = nome;
+		this.id = id;
 	}
 
 	public String getUri() {
@@ -44,13 +45,15 @@ public class EndPointSparql {
 		this.nome = nome;
 	}
 
-	public ObjectId getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(ObjectId id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
+
+
 	
 	
 	
