@@ -3,6 +3,7 @@ package foo.dbgroup.RDFstruct.voidQuery;
 import com.google.code.morphia.Datastore;
 import com.hp.hpl.jena.query.ResultSet;
 
+import foo.dbgroup.mongo.dao.DatasetResultDAO;
 import foo.dbgroup.mongo.entity.GenericQuery;
 
 public interface GenericQueryExecutor<T> {
@@ -45,6 +46,6 @@ public interface GenericQueryExecutor<T> {
 	public void printMarkDown(String name);
 	
 	//TODO commentare
-	public void saveToMongo(Datastore ds);
+	public void saveToMongo(DatasetResultDAO ds);
 	
 }

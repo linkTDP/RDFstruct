@@ -14,8 +14,11 @@ import foo.dbgroup.RDFstruct.datasource.VirtuosoLocalProvider;
 import foo.dbgroup.RDFstruct.voidQuery.BuildVoidQuery;
 import foo.dbgroup.RDFstruct.voidQuery.QueryExcecutorLocal;
 import foo.dbgroup.RDFstruct.voidQuery.QueryExecutorRemote;
+import foo.dbgroup.mongo.dao.DatasetResultDAO;
+import foo.dbgroup.mongo.entity.DatasetResult;
 import foo.dbgroup.mongo.entity.EndPointSparql;
 import foo.dbgroup.mongo.entity.GenericQuery;
+import foo.dbgroup.mongo.entity.ResultAtom;
 
 public class PopulateDatasetResult {
 
@@ -27,6 +30,8 @@ public class PopulateDatasetResult {
 		BuildVoidQuery qu=new BuildVoidQuery();
 		
 		List<GenericQuery> liqu=qu.getVoidQuery();
+		
+		
 		
 		Mongo mongo= null;
 		try {
@@ -41,6 +46,8 @@ public class PopulateDatasetResult {
 //		exe.setDataset(a.getVgraph());
 		Morphia morphia = new Morphia();
 		
+		DatasetResultDAO rDao=new DatasetResultDAO(mongo, morphia);
+		
 		Datastore ds = morphia.createDatastore(mongo, "RDFstruct");
 		
 		
@@ -50,17 +57,44 @@ public class PopulateDatasetResult {
 		
 		for(EndPointSparql end:repo.getLista()){
 			
+			//recuera dataset
+			
+			DatasetResult d=rDao.findOne("uri", end.getUri());
+			
+//			System.out.println(d.getUri());
+			
 			exe.setDataset(end.getUri(),end.getNome());
 			
-			
-			for (GenericQuery current :liqu ){
-				exe.setQuery(current);
-				exe.executeQuery();
-				exe.printResult();	
+			if(d!=null){
+				exe.setResult(d);
+				System.out.println("mach found! overwrite DatasetResult");
 			}
 			
-			exe.saveToMongo(ds);
+			boolean changes=false;
 			
+			for (GenericQuery current :liqu ){
+				
+				boolean skip=false;
+				if(d!=null){
+					for(ResultAtom atom : d.getQueryResult()){
+						if(atom.getQueryNumber()==current.getNumber() && atom.getError()==null)skip=true;
+					}
+				}
+				
+				if(!skip){
+					exe.setQuery(current);
+					exe.executeQuery();
+					exe.printResult();
+					changes=true;
+				}else{
+					System.out.println("skipped query :"+current.getTitle());
+				}
+				
+			}
+			if(changes){
+				System.out.println("Changes found. Try to update");
+				exe.saveToMongo(rDao);
+			}
 //			exe.printMarkDown(end.getNome());
 		}
 //		System.out.println(a.testConnetion());

@@ -51,4 +51,8 @@ public class DatasetResult {
 		if(queryResult == null) queryResult=new ArrayList<ResultAtom>();
 		queryResult.add(element);
 	}
+	
+	public void removeEntity(ResultAtom element){
+		queryResult.remove(element);
+	}
 }

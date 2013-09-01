@@ -14,7 +14,7 @@ import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
-
+import foo.dbgroup.mongo.dao.DatasetResultDAO;
 import foo.dbgroup.mongo.entity.DatasetResult;
 import foo.dbgroup.mongo.entity.DoubleResult;
 import foo.dbgroup.mongo.entity.GenericQuery;
@@ -33,6 +33,17 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 	@Override
 	public void setQuery(GenericQuery q) {
 		query=q;
+		
+		//se c'è gia un elemento lo rimuovo
+		ResultAtom find=null; 
+		for(ResultAtom current : getResult().getQueryResult()){
+			if(current.getQueryNumber() == q.getNumber()){
+				find=current;
+			}
+		}
+		
+		if(find!= null)getResult().removeEntity(find);
+		
 		ResultAtom current = new ResultAtom();
 		current.setTitle(q.getTitle());
 		current.setQueryNumber(q.getNumber());
@@ -143,7 +154,7 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 		this.entity = entity;
 	}
 	
-	public void saveToMongo(Datastore ds){
+	public void saveToMongo(DatasetResultDAO ds){
 		ds.save(getResult());
 		
 		setResult(null);
