@@ -18,7 +18,7 @@ import foo.dbgroup.mongo.dao.EndpointSparqlDAO;
 import foo.dbgroup.mongo.entity.EndPointSparql;
 import foo.dbgroup.mongo.entity.GenericQuery;
 
-public class ResultFromSelectedEndpoint {
+public class ResultFromSelectedEndpointNCBO {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -26,7 +26,7 @@ public class ResultFromSelectedEndpoint {
 		MorphiaLoggerFactory.registerLogger(SLF4JLogrImplFactory.class);
 		List<GenericQuery> liqu=qu.getVoidQuery();
 		
-		QueryExecutorRemote exe = new QueryExecutorRemote();
+		QueryExecutorRemoteNCBO exe = new QueryExecutorRemoteNCBO();
 		
 		MongoClient mongoClient;
 		
@@ -51,17 +51,17 @@ public class ResultFromSelectedEndpoint {
 		DatasetResultDAO rDao=new DatasetResultDAO(mongo, morphia);
 		//*******************************************
 		
-		EndPointSparql e=dao.findOne("_id", 1);
+		EndPointSparql e=dao.findOne("id", 100);
 		
 		exe.setDataset(e.getUri(),e.getNome());
 		
-		System.out.println(e.getUri());
+		
 		
 		Datastore ds = morphia.createDatastore(mongo, "RDFstruct");
 		
 		for (GenericQuery current :liqu ){
 			exe.setQuery(current);
-			exe.executeQuery();
+			exe.executeQuery(true);
 			exe.printResult();
 			
 		}

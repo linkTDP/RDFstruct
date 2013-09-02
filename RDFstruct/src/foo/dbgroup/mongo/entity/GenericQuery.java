@@ -8,9 +8,11 @@ import com.google.code.morphia.annotations.Id;
 @Entity
 public class GenericQuery {
 	
-	private String query;
+	private String prequery;
+	private String postquery;
 	private List<String> parameters;
 	private String title;
+	private String absoluteQuery;
 	
 	@Id
 	private Integer number;
@@ -18,11 +20,14 @@ public class GenericQuery {
 	
 	
 	public String getQuery() {
-		return query;
+		if(absoluteQuery!=null)return absoluteQuery;
+		else return getPrequery()+getPostquery();
 	}
-	public void setQuery(String query) {
-		this.query = query;
+	
+	public String getQueryNCBO(String dataset) {
+		return getPrequery()+" FROM <"+dataset+"> "+getPostquery();
 	}
+	
 	
 	
 	public List<String> getParameters() {
@@ -44,6 +49,38 @@ public class GenericQuery {
 	}
 	public void setNumber(Integer number) {
 		this.number = number;
+	}
+
+
+
+	public String getPrequery() {
+		return prequery;
+	}
+
+
+
+	public void setPrequery(String prequery) {
+		this.prequery = prequery;
+	}
+
+
+
+	public String getPostquery() {
+		return postquery;
+	}
+
+
+
+	public void setPostquery(String postquery) {
+		this.postquery = postquery;
+	}
+
+	public String getAbsoluteQuery() {
+		return absoluteQuery;
+	}
+
+	public void setAbsoluteQuery(String absoluteQuery) {
+		this.absoluteQuery = absoluteQuery;
 	}
 
 }

@@ -16,6 +16,12 @@ public class EndPointSparql {
 	
 	private String nome;
 	
+	private String acronym;
+	
+	private String version;
+	
+	private boolean NCBO;
+	
 	
 
 	public EndPointSparql() {
@@ -53,15 +59,30 @@ public class EndPointSparql {
 		this.id = id;
 	}
 
+	public String getAcronym() {
+		return acronym;
+	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public void setAcronym(String acronym) {
+		this.acronym = acronym;
+	}
+
+	public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+	public boolean isNCBO() {
+		return NCBO;
+	}
+
+	public void setNCBO(boolean nCBO) {
+		NCBO = nCBO;
+	}
+
+
 
 }

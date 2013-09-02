@@ -22,27 +22,35 @@ import foo.dbgroup.mongo.entity.GenericQuery;
 public class EndpointTest {
 
 	public static void main(String[] args) {
-		MorphiaLoggerFactory.registerLogger(SLF4JLogrImplFactory.class);
-		Mongo mongo= null;
-		try {
-			mongo = new Mongo();
-		} catch (UnknownHostException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		
-		Morphia morphia = new Morphia();
-		
-		GenericQueryDAO queryDao=new GenericQueryDAO( mongo,morphia);
-		
-		
-		
-		List<GenericQuery> q=queryDao.find().asList();
-		
-		for(GenericQuery cur : q){
-			System.out.println(cur.getQuery());
-		}
+//		MorphiaLoggerFactory.registerLogger(SLF4JLogrImplFactory.class);
+//		Mongo mongo= null;
+//		try {
+//			mongo = new Mongo();
+//		} catch (UnknownHostException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
+//		
+//		Morphia morphia = new Morphia();
+//		
+//		GenericQueryDAO queryDao=new GenericQueryDAO( mongo,morphia);
+//		
+//		
+//		
+//		List<GenericQuery> q=queryDao.find().asList();
+//		
+//		for(GenericQuery cur : q){
+//			System.out.println(cur.getQuery());
+//		}
+
 	
+		String a="6619847^^http://www.w3.org/2001/XMLSchema#integer";
+		
+		System.out.println(a);
+		System.out.println(a.toString().contains("^^http://www.w3.org/2001/XMLSchema#integer"));
+		String cur=a.toString().replaceAll("\\^\\^http://www.w3.org/2001/XMLSchema#integer", "");
+		cur=cur.replaceAll("\\^\\^http://www.w3.org/2001/XMLSchema#int", "");
+		System.out.println(cur);
 	}
 
 }

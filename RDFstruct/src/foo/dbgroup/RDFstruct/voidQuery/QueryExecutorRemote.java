@@ -37,7 +37,6 @@ public class QueryExecutorRemote extends GenericQueryExecutorImp<String> {
 		
 		try{
 			Query sparql = QueryFactory.create(this.getQuery().getQuery());
-			
 			QueryExecution qe = QueryExecutionFactory.sparqlService(dataset, sparql);
 			qe.setTimeout(50000, TimeUnit.MILLISECONDS);
 			ResultSet curresult=qe.execSelect();
@@ -54,7 +53,6 @@ public class QueryExecutorRemote extends GenericQueryExecutorImp<String> {
 			
 			
 			ResultAtom a=getEntity();
-			
 			a.setError(e.getMessage());
 			a.setTrace(trace);
 			setEntity(a);

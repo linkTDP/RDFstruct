@@ -5,7 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.markdown4j.Markdown4jProcessor;
 
@@ -17,6 +19,7 @@ import com.hp.hpl.jena.rdf.model.RDFNode;
 import foo.dbgroup.mongo.dao.DatasetResultDAO;
 import foo.dbgroup.mongo.entity.DatasetResult;
 import foo.dbgroup.mongo.entity.DoubleResult;
+import foo.dbgroup.mongo.entity.EndPointSparql;
 import foo.dbgroup.mongo.entity.GenericQuery;
 import foo.dbgroup.mongo.entity.ResultAtom;
 
@@ -30,15 +33,20 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 	
 	
 	
+	
+	
+	
 	@Override
 	public void setQuery(GenericQuery q) {
 		query=q;
 		
 		//se c'è gia un elemento lo rimuovo
-		ResultAtom find=null; 
-		for(ResultAtom current : getResult().getQueryResult()){
-			if(current.getQueryNumber() == q.getNumber()){
-				find=current;
+		ResultAtom find=null;
+		if(getResult()!=null&&getResult().getQueryResult()!=null){
+			for(ResultAtom current : getResult().getQueryResult()){
+				if(current.getQueryNumber() == q.getNumber()){
+					find=current;
+				}
 			}
 		}
 		
@@ -57,6 +65,8 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 	public void printResult() {
 		if(results!=null){
 		while (results.hasNext()) {
+			
+			
 			QuerySolution result = results.nextSolution();
 			DoubleResult doub=new DoubleResult();
 			for(int i = 0;i<query.getParameters().size();i++){
@@ -65,10 +75,24 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 					System.out.print("  --  ");
 					html+="  --  ";
 				}
-				String cur=a.toString().replaceAll("\\^\\^http://www.w3.org/2001/XMLSchema#integer", "");
-				cur=cur.replaceAll("\\^\\^http://www.w3.org/2001/XMLSchema#int", "");
-				System.out.print(cur);
-				html+=cur;
+				
+				String cur="";
+				if(a.toString().contains("^^http://www.w3.org/2001/XMLSchema#integer")||a.toString().contains("^^http://www.w3.org/2001/XMLSchema#int")){
+					cur=a.toString().replaceAll("\\^\\^http://www.w3.org/2001/XMLSchema#integer", "");
+					cur=cur.replaceAll("\\^\\^http://www.w3.org/2001/XMLSchema#int", "");
+					System.out.print(cur);
+					html+=cur;
+				}else{
+					if(a.toString().contains("^^http://www.w3.org/2001/XMLSchema#string")){
+						cur=a.toString().replaceAll("\\^\\^http://www.w3.org/2001/XMLSchema#string", "");
+						System.out.print(cur);
+						html+=cur;
+					}else{
+						cur=a.toString();
+						System.out.print(cur);
+					}
+				}
+				
 				
 				if(query.getParameters().size()==1 && query.getParameters().get(i).contains("?no")){
 					getEntity().setCount(Integer.parseInt(cur));
@@ -89,7 +113,9 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 			html+="\n";
 			
 		}
-		getResult().addEntity(getEntity());
+		if(getResult()!=null){
+			getResult().addEntity(getEntity());
+		}
 		}else{
 			
 			System.out.print("\n");
@@ -99,14 +125,11 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 		
 	}
 
-
-
 	@Override
 	public GenericQuery getQuery() {
 		
 		return query;
 	}
-
 
 
 	@Override
@@ -142,13 +165,9 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 		html="";
 	}
 
-
-
 	public ResultAtom getEntity() {
 		return entity;
 	}
-
-
 
 	public void setEntity(ResultAtom entity) {
 		this.entity = entity;
@@ -160,16 +179,34 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 		setResult(null);
 	}
 
-
-
 	public DatasetResult getResult() {
 		return result;
 	}
 
-
-
 	public void setResult(DatasetResult result) {
 		this.result = result;
 	}
+
+
+
+	public ResultSet getResultSet() {
+		return results;
+	}
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
 	
 }
