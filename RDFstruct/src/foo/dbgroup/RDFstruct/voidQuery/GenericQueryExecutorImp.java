@@ -17,10 +17,12 @@ import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
 import foo.dbgroup.mongo.dao.DatasetResultDAO;
+import foo.dbgroup.mongo.entity.ClassLOD;
 import foo.dbgroup.mongo.entity.DatasetResult;
 import foo.dbgroup.mongo.entity.DoubleResult;
 import foo.dbgroup.mongo.entity.EndPointSparql;
 import foo.dbgroup.mongo.entity.GenericQuery;
+import foo.dbgroup.mongo.entity.MyTriple;
 import foo.dbgroup.mongo.entity.ResultAtom;
 
 public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor<T> {
@@ -39,7 +41,7 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 	@Override
 	public void setQuery(GenericQuery q) {
 		query=q;
-		
+		setResultSet(null);
 		//se c'è gia un elemento lo rimuovo
 		ResultAtom find=null;
 		if(getResult()!=null&&getResult().getQueryResult()!=null){
@@ -65,8 +67,6 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 	public void printResult() {
 		if(results!=null){
 		while (results.hasNext()) {
-			
-			
 			QuerySolution result = results.nextSolution();
 			DoubleResult doub=new DoubleResult();
 			for(int i = 0;i<query.getParameters().size();i++){
@@ -92,15 +92,13 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 						System.out.print(cur);
 					}
 				}
-				
-				
 				if(query.getParameters().size()==1 && query.getParameters().get(i).contains("?no")){
 					getEntity().setCount(Integer.parseInt(cur));
 				}
 				if(query.getParameters().size()==1 && query.getParameters().get(i).contains("?list")){
 					getEntity().addResult(cur);
 				}
-				if(query.getParameters().size()==2){
+				if(query.getParameters().size()==2&&(query.getParameters().get(i).contains("?p")||query.getParameters().get(i).contains("?count"))){
 					if (i==0)doub.setProp(cur);
 					if(i==1){
 						doub.setCount(Integer.parseInt(cur));
@@ -192,6 +190,76 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 	public ResultSet getResultSet() {
 		return results;
 	}
+
+
+
+	public List<MyTriple> getTriple(){
+		List<MyTriple> mieTriple=new ArrayList<MyTriple>();
+		if(results!=null&&getQuery().getConstant()!=null){
+			
+			while (results.hasNext()) {
+				QuerySolution result = results.nextSolution();
+				MyTriple currentTriple=new MyTriple();
+				if(getQuery().isObject())currentTriple.setObject(getQuery().getConstant());
+				if(getQuery().isPredicate())currentTriple.setPredicate(getQuery().getConstant());
+				if(getQuery().isSubject())currentTriple.setSubject(getQuery().getConstant());
+				for(int i = 0;i<query.getParameters().size();i++){
+					RDFNode a=result.get(query.getParameters().get(i));
+					
+					String cur=a.toString();
+					if(query.getParameters().get(i).compareTo("?a")==0){
+						currentTriple.setSubject(cur);
+					}
+					if(query.getParameters().get(i).compareTo("?b")==0){
+						currentTriple.setPredicate(cur);
+					}
+					if(query.getParameters().get(i).compareTo("?c")==0){
+						currentTriple.setObject(cur);
+					}
+				}
+			mieTriple.add(currentTriple);	
+			}
+		}
+		return mieTriple;
+	}
+		
+	
+	
+	public List<ClassLOD> createClass() {
+		List<ClassLOD> mieClassi=new ArrayList<ClassLOD>();
+		if(results!=null){
+			
+			while (results.hasNext()) {
+				QuerySolution result = results.nextSolution();
+				ClassLOD currentClass=new ClassLOD();
+				RDFNode a=result.get(query.getParameters().get(0));
+				String cur=a.toString();
+				currentClass.setClas(cur);
+				mieClassi.add(currentClass);
+			}
+		}
+		return mieClassi;
+	}
+	
+	public void addNode(List<ClassLOD> clasLod) {
+		int index=0;
+		for(int i = 0; i<clasLod.size(); i++){
+			if(clasLod.get(i).getClas().compareTo(getQuery().getConstant())==0){
+				index=i;
+				break;
+			}
+		}
+		if(results!=null){	
+			while (results.hasNext()) {
+				QuerySolution result = results.nextSolution();
+				RDFNode a=result.get(query.getParameters().get(0));
+				String cur=a.toString();
+				clasLod.get(index).addBlankNode(cur);
+			}
+		}
+		
+	}
+	
 
 
 

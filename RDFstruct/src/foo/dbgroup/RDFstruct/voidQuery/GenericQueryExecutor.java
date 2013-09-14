@@ -1,10 +1,13 @@
 package foo.dbgroup.RDFstruct.voidQuery;
 
+import java.util.List;
+
 import com.google.code.morphia.Datastore;
 import com.hp.hpl.jena.query.ResultSet;
 
 import foo.dbgroup.mongo.dao.DatasetResultDAO;
 import foo.dbgroup.mongo.entity.GenericQuery;
+import foo.dbgroup.mongo.entity.MyTriple;
 
 public interface GenericQueryExecutor<T> {
 
@@ -47,5 +50,9 @@ public interface GenericQueryExecutor<T> {
 	
 	//TODO commentare
 	public void saveToMongo(DatasetResultDAO ds);
+	
+	
+	
+	public List<MyTriple> getTriple();
 	
 }

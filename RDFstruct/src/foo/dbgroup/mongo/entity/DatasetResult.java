@@ -55,4 +55,45 @@ public class DatasetResult {
 	public void removeEntity(ResultAtom element){
 		queryResult.remove(element);
 	}
+	
+	public List<ResultAtom> getQueryResultNoSchema(){
+		List<ResultAtom> queryResultNoSchema=new ArrayList<ResultAtom>();
+		for(ResultAtom current : queryResult){
+			if(current.getCount()==null&&current.getError()==null){
+				if(current.getResult()!=null){
+					List<String> curRes=new ArrayList<String>();
+					for(String cstri:current.getResult()){
+						if(!(cstri.contains("http://www.openlinksw.com/schemas")||
+								cstri.contains("http://www.w3.org/ns/sparql-service-description#")||
+								cstri.contains("http://www.w3.org/2002/07/owl#")||
+								cstri.contains("http://www.w3.org/2000/01/rdf-schema#")||
+								cstri.contains("http://www.w3.org/1999/02/22-rdf-syntax-ns"))){
+							curRes.add(cstri);
+						}
+					}
+					ResultAtom tmp=current;
+					tmp.setResult(curRes);
+					queryResultNoSchema.add(tmp);
+				}
+				if(current.getCresult()!=null){
+					List<DoubleResult> curRes=new ArrayList<DoubleResult>();
+					for(DoubleResult cstri:current.getCresult()){
+						if(!(cstri.getProp().contains("http://www.openlinksw.com/schemas")||
+								cstri.getProp().contains("http://www.w3.org/ns/sparql-service-description#")||
+								cstri.getProp().contains("http://www.w3.org/2002/07/owl#")||
+								cstri.getProp().contains("http://www.w3.org/2000/01/rdf-schema#")||
+								cstri.getProp().contains("http://www.w3.org/1999/02/22-rdf-syntax-ns"))){
+							curRes.add(cstri);
+						}
+					}
+					ResultAtom tmp=current;
+					tmp.setCresult(curRes);
+					queryResultNoSchema.add(tmp);
+				}
+			}else{
+				queryResultNoSchema.add(current);
+			}
+		}
+		return queryResultNoSchema;
+	}
 }

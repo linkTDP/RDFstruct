@@ -14,6 +14,12 @@ public class GenericQuery {
 	private String title;
 	private String absoluteQuery;
 	
+	/*  Used for Ontology (owl+Rdfs) extraction      */
+	private String constant;
+	private boolean predicate;
+	private boolean subject;
+	private boolean object;
+	
 	@Id
 	private Integer number;
 	
@@ -81,6 +87,38 @@ public class GenericQuery {
 
 	public void setAbsoluteQuery(String absoluteQuery) {
 		this.absoluteQuery = absoluteQuery;
+	}
+
+	public String getConstant() {
+		return constant;
+	}
+
+	public void setConstant(String constant) {
+		this.constant = constant;
+	}
+
+	public boolean isPredicate() {
+		return predicate;
+	}
+
+	public void setPredicate(boolean predicate) {
+		this.predicate = predicate;
+	}
+
+	public boolean isSubject() {
+		return subject;
+	}
+
+	public void setSubject(boolean subject) {
+		this.subject = subject;
+	}
+
+	public boolean isObject() {
+		return object;
+	}
+
+	public void setObject(boolean object) {
+		this.object = object;
 	}
 
 }

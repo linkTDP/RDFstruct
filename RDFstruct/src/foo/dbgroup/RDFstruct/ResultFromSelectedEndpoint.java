@@ -10,6 +10,7 @@ import com.google.code.morphia.logging.slf4j.SLF4JLogrImplFactory;
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 
+import foo.dbgroup.RDFstruct.voidQuery.BuildExtractOntoQuery;
 import foo.dbgroup.RDFstruct.voidQuery.BuildVoidQuery;
 import foo.dbgroup.RDFstruct.voidQuery.QueryExecutorRemote;
 import foo.dbgroup.RDFstruct.voidQuery.QueryExecutorRemoteNCBO;
@@ -23,8 +24,13 @@ public class ResultFromSelectedEndpoint {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		BuildVoidQuery qu=new BuildVoidQuery();
+		BuildExtractOntoQuery quOn=new BuildExtractOntoQuery();
 		MorphiaLoggerFactory.registerLogger(SLF4JLogrImplFactory.class);
-		List<GenericQuery> liqu=qu.getVoidQuery();
+		
+		//*******************************************
+		
+//		List<GenericQuery> liqu=qu.getVoidQuery();
+		List<GenericQuery> liqu=quOn.getQuery();
 		
 		QueryExecutorRemote exe = new QueryExecutorRemote();
 		

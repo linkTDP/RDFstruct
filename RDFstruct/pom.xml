@@ -69,6 +69,26 @@
 	<type>jar</type>
 	<optional>true</optional>
 </dependency>
+
+<dependency>
+      <groupId>org.graphstream</groupId>
+      <artifactId>gs-core</artifactId>
+      <version>1.2</version>
+      <optional>false</optional>
+    </dependency>
+<dependency>
+      <groupId>org.graphstream</groupId>
+      <artifactId>gs-algo</artifactId>
+      <version>1.2</version>
+      <optional>false</optional>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.graphstream</groupId>
+      <artifactId>gs-ui</artifactId>
+      <version>1.2</version>
+      <optional>false</optional>
+    </dependency>
             
             
             <dependency>
@@ -104,5 +124,15 @@
             <id>Spark repository</id>
             <url>http://www.sparkjava.com/nexus/content/repositories/spark/</url>
         </repository>
+        <repository>
+  <id>central</id>
+  <name>Maven Repository Switchboard</name>
+  <layout>default</layout>
+  <url>http://repo1.maven.org/maven2</url>
+  <snapshots>
+    <enabled>false</enabled>
+  </snapshots>
+</repository>
     </repositories>
+    
 </project>

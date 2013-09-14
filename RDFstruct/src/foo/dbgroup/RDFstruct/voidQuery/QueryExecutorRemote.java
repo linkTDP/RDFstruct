@@ -2,6 +2,7 @@ package foo.dbgroup.RDFstruct.voidQuery;
 
 
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import com.hp.hpl.jena.query.Query;
@@ -10,7 +11,9 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.ResultSet;
 
+import foo.dbgroup.mongo.entity.ClassLOD;
 import foo.dbgroup.mongo.entity.DatasetResult;
+import foo.dbgroup.mongo.entity.GenericQuery;
 import foo.dbgroup.mongo.entity.ResultAtom;
 
 
@@ -37,6 +40,7 @@ public class QueryExecutorRemote extends GenericQueryExecutorImp<String> {
 		
 		try{
 			Query sparql = QueryFactory.create(this.getQuery().getQuery());
+			System.out.println(this.getQuery().getQuery());
 			QueryExecution qe = QueryExecutionFactory.sparqlService(dataset, sparql);
 			qe.setTimeout(50000, TimeUnit.MILLISECONDS);
 			ResultSet curresult=qe.execSelect();
@@ -61,6 +65,12 @@ public class QueryExecutorRemote extends GenericQueryExecutorImp<String> {
 			setResultSet(null);
 		}
 	}
+
+	
+
+	
+
+	
 	
 	
 }

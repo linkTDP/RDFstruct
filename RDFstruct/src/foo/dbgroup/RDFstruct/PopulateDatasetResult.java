@@ -65,7 +65,7 @@ public class PopulateDatasetResult {
 		
 		for(EndPointSparql end:repo){
 				
-		if(end.getId()>50){
+		
 				//recuera dataset
 				
 				DatasetResult d=rDao.findOne("uri", end.getUri());
@@ -114,7 +114,7 @@ public class PopulateDatasetResult {
 					else exe.saveToMongo(rDao);
 				}
 				
-		}
+		
 				
 //			exe.printMarkDown(end.getNome());
 		}

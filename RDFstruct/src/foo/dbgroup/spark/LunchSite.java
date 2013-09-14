@@ -157,6 +157,7 @@ public class LunchSite {
 				DatasetResult d=daDao.findOne("uri", end.getUri());
 				SimpleHash root = new SimpleHash();
 				root.put("queryResult", d.getQueryResult());
+//				root.put("queryResult", d.getQueryResultNoSchema());
 				root.put("name", d.getName());
 				root.put("uri", d.getUri());
 				template.process(root, writer);
