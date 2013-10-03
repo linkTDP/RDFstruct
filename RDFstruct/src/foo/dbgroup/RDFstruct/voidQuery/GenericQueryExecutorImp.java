@@ -20,6 +20,7 @@ import foo.dbgroup.mongo.dao.DatasetResultDAO;
 import foo.dbgroup.mongo.entity.ClassLOD;
 import foo.dbgroup.mongo.entity.DatasetResult;
 import foo.dbgroup.mongo.entity.DoubleResult;
+import foo.dbgroup.mongo.entity.EdgeLOD;
 import foo.dbgroup.mongo.entity.EndPointSparql;
 import foo.dbgroup.mongo.entity.GenericQuery;
 import foo.dbgroup.mongo.entity.MyTriple;
@@ -241,23 +242,33 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 		return mieClassi;
 	}
 	
-	public void addNode(List<ClassLOD> clasLod) {
-		int index=0;
-		for(int i = 0; i<clasLod.size(); i++){
-			if(clasLod.get(i).getClas().compareTo(getQuery().getConstant())==0){
-				index=i;
-				break;
-			}
-		}
-		if(results!=null){	
-			while (results.hasNext()) {
-				QuerySolution result = results.nextSolution();
-				RDFNode a=result.get(query.getParameters().get(0));
-				String cur=a.toString();
-				clasLod.get(index).addBlankNode(cur);
-			}
-		}
+	public List<EdgeLOD> addNode(List<ClassLOD> clasLod) {
 		
+		List<EdgeLOD> edge=new ArrayList<EdgeLOD>();
+		if(results!=null){
+			while (results.hasNext()) {
+				EdgeLOD current=new EdgeLOD();
+				int ind=0;
+				String sClassSub="";
+				ind=getQuery().getConstant().lastIndexOf('/');
+				sClassSub=getQuery().getConstant().substring(ind+1, getQuery().getConstant().length());
+				if(sClassSub.length()>0)current.setsClass(sClassSub);
+				else current.setsClass(getQuery().getConstant());
+				QuerySolution result = results.nextSolution();
+				for(int i = 0;i<query.getParameters().size();i++){
+					RDFNode a=result.get(query.getParameters().get(i));
+					String cur=a.toString();
+					int index =0;
+					if(cur!=null && cur.length()>0)index=cur.lastIndexOf('/');
+					if(index!=0)cur=cur.substring(index+1, cur.length());
+					if(query.getParameters().get(i).compareTo("?Popietry")==0)current.setProperty(cur);
+					if(query.getParameters().get(i).compareTo("?OClass")==0)current.setoClass(cur);
+//					System.out.println(cur);
+				}
+				edge.add(current);
+			}
+		}
+		return edge;
 	}
 	
 

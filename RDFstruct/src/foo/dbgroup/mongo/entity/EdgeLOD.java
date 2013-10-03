@@ -9,7 +9,7 @@ public class EdgeLOD {
 
 	private String sClass;
 	private String property;
-	private String dClass;
+	private String oClass;
 	@Id
 	private ObjectId id;
 	
@@ -29,11 +29,18 @@ public class EdgeLOD {
 	public void setProperty(String property) {
 		this.property = property;
 	}
-	public String getdClass() {
-		return dClass;
+	public String getoClass() {
+		return oClass;
 	}
-	public void setdClass(String dClass) {
-		this.dClass = dClass;
+	public void setoClass(String dClass) {
+		this.oClass = dClass;
 	}
+
+	@Override
+	public String toString() {
+		return "EdgeLOD [sClass=" + sClass + ", property=" + property
+				+ ", oClass=" + oClass + "]";
+	}
+	
 	
 }

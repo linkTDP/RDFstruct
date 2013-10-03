@@ -11,8 +11,8 @@ import foo.dbgroup.mongo.entity.GenericQuery;
 public class BuildExtractSchemaQuery {
 
 	public String start="SELECT DISTINCT ?Concept {[] a ?Concept}";
-	public String secondLevel = "SELECT * { ?s a ?Concept. FILTER IsBLANK(?s) } LIMIT 10"; //IN futuro potrebbe essere utile anche IsUri
-	
+	public String secondLevelOld = "SELECT * { ?s a ?Concept.} LIMIT 10"; //IN futuro potrebbe essere utile anche IsUri  FILTER IsBLANK(?s) 
+	public String secondLevel = "SELECT DISTINCT ?Popietry ?OClass {?SInstance a ?SClass. ?SInstance ?Popietry ?OInstance. ?OInstance a ?OClass.}";
 	
 	public GenericQuery start() {
 		GenericQuery q=new GenericQuery();
@@ -24,11 +24,11 @@ public class BuildExtractSchemaQuery {
 		return q;
 	}
 
-
-	public List<GenericQuery> secondLQuery(List<ClassLOD> clasLod) {
+@Deprecated
+	public List<GenericQuery> secondLQueryOld(List<ClassLOD> clasLod) {
 		List<GenericQuery> secLev=new ArrayList<GenericQuery>();
 		for( ClassLOD current : clasLod){
-			ParameterizedSparqlString queryStr = new ParameterizedSparqlString(secondLevel);
+			ParameterizedSparqlString queryStr = new ParameterizedSparqlString(secondLevelOld);
 			queryStr.setIri("Concept", current.getClas());
 			List<String> par=new ArrayList<String>();
 			par.add("?s");
@@ -43,6 +43,25 @@ public class BuildExtractSchemaQuery {
 		return secLev;
 	}
 
-	
+
+	public List<GenericQuery> secondLQuery(List<ClassLOD> clasLod){
+		List<GenericQuery> secLev=new ArrayList<GenericQuery>();
+		for( ClassLOD current : clasLod){
+			if(!current.getClas().contains("http://www.openlinksw.com/schemas/virtrdf")){
+				ParameterizedSparqlString queryStr = new ParameterizedSparqlString(secondLevel);
+				queryStr.setIri("SClass", current.getClas());
+				List<String> par=new ArrayList<String>();
+				par.add("?Popietry");
+				par.add("?OClass");
+				GenericQuery currentQuery=new GenericQuery();
+				currentQuery.setAbsoluteQuery(queryStr.toString());
+				currentQuery.setParameters(par);
+				currentQuery.setTitle("Second level query for the Class: "+current.getClas());
+				currentQuery.setConstant(current.getClas());
+				secLev.add(currentQuery);
+			}
+		}
+		return secLev;
+	}
 	
 }

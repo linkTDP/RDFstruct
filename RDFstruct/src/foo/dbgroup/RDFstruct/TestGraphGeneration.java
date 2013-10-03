@@ -12,6 +12,7 @@ import foo.dbgroup.mongo.entity.EndPointSparql;
 public class TestGraphGeneration {
 	
 	public static void main(String[] args) {
+		System.setProperty("gs.ui.renderer", "org.graphstream.ui.j2dviewer.J2DGraphRenderer");
 		Mongo mongo= null;
 		try {
 			mongo = new Mongo();
@@ -25,6 +26,7 @@ public class TestGraphGeneration {
 		Morphia morphia = new Morphia();
 		
 		EndpointSparqlDAO dao = new EndpointSparqlDAO(mongo, morphia);
+		//2 
 		
 		EndPointSparql e=dao.findOne("_id", 1);
 		

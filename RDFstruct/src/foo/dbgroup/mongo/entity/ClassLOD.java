@@ -8,6 +8,7 @@ public class ClassLOD {
 	
 	private String clas;
 	
+	
 	private List<String> blankNode;
 
 	public String getClas() {
@@ -18,14 +19,17 @@ public class ClassLOD {
 		this.clas = clas;
 	}
 
+	@Deprecated
 	public List<String> getBlankNode() {
 		return blankNode;
 	}
 
+	@Deprecated
 	public void setBlankNode(List<String> blankNode) {
 		this.blankNode = blankNode;
 	}
 	
+	@Deprecated
 	public void addBlankNode(String blankNode){
 		if(this.blankNode==null)this.blankNode=new ArrayList<String>();
 		this.blankNode.add(blankNode);
