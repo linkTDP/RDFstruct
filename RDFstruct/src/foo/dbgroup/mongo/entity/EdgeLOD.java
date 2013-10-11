@@ -1,17 +1,15 @@
 package foo.dbgroup.mongo.entity;
 
-import org.bson.types.ObjectId;
 
-import com.google.code.morphia.annotations.Entity;
-import com.google.code.morphia.annotations.Id;
-@Entity
+
 public class EdgeLOD {
 
 	private String sClass;
 	private String property;
 	private String oClass;
-	@Id
-	private ObjectId id;
+	
+	private boolean error;
+	
 	
 	public EdgeLOD() {
 		super();
@@ -40,6 +38,14 @@ public class EdgeLOD {
 	public String toString() {
 		return "EdgeLOD [sClass=" + sClass + ", property=" + property
 				+ ", oClass=" + oClass + "]";
+	}
+
+	public boolean isError() {
+		return error;
+	}
+
+	public void setError(boolean error) {
+		this.error = error;
 	}
 	
 	

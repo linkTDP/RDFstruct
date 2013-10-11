@@ -39,6 +39,7 @@ public class QueryExecutorRemoteNCBO extends GenericQueryExecutorImp<String> {
 		this.setResult(a);
 	}
 	
+	
 	public void executeQuery(boolean injection){
 		System.out.println("\n"+getQuery().getTitle()+"\n");
 		ResultAtom b=getEntity();
@@ -114,6 +115,7 @@ public class QueryExecutorRemoteNCBO extends GenericQueryExecutorImp<String> {
 	}
 	
 	public List<EndPointSparql> getEndPointNCBO(){
+		this.executeQuery(false);
 		if(getResultSet()!=null){
 			while (getResultSet().hasNext()) {
 				
@@ -184,6 +186,14 @@ public class QueryExecutorRemoteNCBO extends GenericQueryExecutorImp<String> {
 	public void addEndPoint(EndPointSparql element) {
 		if(endPoint == null) endPoint=new ArrayList<EndPointSparql>();
 		endPoint.add(element);
+	}
+
+
+	@Override
+	@Deprecated
+	public void executeQuery() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

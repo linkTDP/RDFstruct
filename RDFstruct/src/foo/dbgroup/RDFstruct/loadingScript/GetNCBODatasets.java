@@ -1,4 +1,4 @@
-package foo.dbgroup.RDFstruct;
+package foo.dbgroup.RDFstruct.loadingScript;
 
 import java.net.UnknownHostException;
 import java.util.List;

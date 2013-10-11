@@ -33,15 +33,19 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 	String html="";
 	private ResultAtom entity;
 	private DatasetResult result;
+	protected boolean error;
 	
 	
-	
+	/**
+	 * set the query
+	 */
 	
 	
 	
 	@Override
 	public void setQuery(GenericQuery q) {
 		query=q;
+		error=false;
 		setResultSet(null);
 		//se c'è gia un elemento lo rimuovo
 		ResultAtom find=null;
@@ -63,6 +67,11 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 	}
 
 	
+	/**print result of the query (after the exeQuery())
+	 * 
+	 */
+	
+	 
 
 	@Override
 	public void printResult() {
@@ -115,8 +124,7 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 		if(getResult()!=null){
 			getResult().addEntity(getEntity());
 		}
-		}else{
-			
+		}else{	
 			System.out.print("\n");
 			html+="\n";
 		}
@@ -137,6 +145,11 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 		
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see foo.dbgroup.RDFstruct.voidQuery.GenericQueryExecutor#printMarkDown(java.lang.String)
+	 */
+	
 	@Override
 	public void printMarkDown(String name) {
 		BufferedWriter writer = null;
@@ -192,6 +205,13 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 		return results;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see foo.dbgroup.RDFstruct.voidQuery.GenericQueryExecutor#getTriple()
+	 * 
+	 * Used to extract triple from the result set
+	 * 
+	 */
 
 
 	public List<MyTriple> getTriple(){
@@ -224,9 +244,13 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 		return mieTriple;
 	}
 		
-	
+	/*
+	 * Used to extract class from ResultSet
+	 * 
+	 */
 	
 	public List<ClassLOD> createClass() {
+		this.executeQuery();
 		List<ClassLOD> mieClassi=new ArrayList<ClassLOD>();
 		if(results!=null){
 			
@@ -242,25 +266,23 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 		return mieClassi;
 	}
 	
+	/*
+	 * Used to extract Edge from result set
+	 * return null if the query throw an exception
+	 */
+	
 	public List<EdgeLOD> addNode(List<ClassLOD> clasLod) {
-		
+		this.executeQuery();
 		List<EdgeLOD> edge=new ArrayList<EdgeLOD>();
 		if(results!=null){
 			while (results.hasNext()) {
 				EdgeLOD current=new EdgeLOD();
-				int ind=0;
-				String sClassSub="";
-				ind=getQuery().getConstant().lastIndexOf('/');
-				sClassSub=getQuery().getConstant().substring(ind+1, getQuery().getConstant().length());
-				if(sClassSub.length()>0)current.setsClass(sClassSub);
-				else current.setsClass(getQuery().getConstant());
+				current.setsClass(getQuery().getConstant());
 				QuerySolution result = results.nextSolution();
 				for(int i = 0;i<query.getParameters().size();i++){
 					RDFNode a=result.get(query.getParameters().get(i));
 					String cur=a.toString();
-					int index =0;
-					if(cur!=null && cur.length()>0)index=cur.lastIndexOf('/');
-					if(index!=0)cur=cur.substring(index+1, cur.length());
+					if(cur!=null && cur.length()>0)
 					if(query.getParameters().get(i).compareTo("?Popietry")==0)current.setProperty(cur);
 					if(query.getParameters().get(i).compareTo("?OClass")==0)current.setoClass(cur);
 //					System.out.println(cur);
@@ -268,13 +290,51 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 				edge.add(current);
 			}
 		}
+		if(error){
+			edge=null;
+		}
+		
+		
 		return edge;
 	}
 	
 
 
-
-
+	public List<EndPointSparql> getEndPointFromStatus(){
+		this.executeQuery();
+		
+		
+		List<EndPointSparql> endList=new ArrayList<EndPointSparql>();
+		
+		if(results!=null){
+			while (results.hasNext()) {
+				EndPointSparql current = new EndPointSparql();
+				QuerySolution result = results.nextSolution();
+				
+				
+				for(int i = 0;i<query.getParameters().size();i++){
+					RDFNode a=result.get(query.getParameters().get(i));
+					
+					if(query.getParameters().get(i).compareTo("?endpoint")==0){
+						current.setUri(a.toString());
+					}
+					if(query.getParameters().get(i).compareTo("?title")==0){
+						current.setNome(a.toString());
+					}
+					
+				
+				}
+				
+				endList.add(current);
+			}
+			
+			
+		
+		
+		}
+		
+	
+		return endList;
 
 
 
@@ -287,5 +347,7 @@ public abstract class GenericQueryExecutorImp<T> implements GenericQueryExecutor
 
 
 
+	
+}
 	
 }

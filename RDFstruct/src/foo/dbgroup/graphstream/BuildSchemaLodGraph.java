@@ -15,55 +15,63 @@ import org.graphstream.ui.graphicGraph.GraphicGraph;
 import org.graphstream.ui.graphicGraph.GraphicNode;
 import org.graphstream.ui.swingViewer.Viewer;
 
+import com.google.code.morphia.Morphia;
+import com.mongodb.Mongo;
+
 import foo.dbgroup.RDFstruct.voidQuery.BuildExtractOntoQuery;
 import foo.dbgroup.RDFstruct.voidQuery.BuildExtractSchemaQuery;
 import foo.dbgroup.RDFstruct.voidQuery.QueryExecutorRemote;
+import foo.dbgroup.mongo.dao.EndpointSparqlDAO;
+import foo.dbgroup.mongo.dao.SchemaLODDAO;
 import foo.dbgroup.mongo.entity.ClassLOD;
 import foo.dbgroup.mongo.entity.EdgeLOD;
 import foo.dbgroup.mongo.entity.EndPointSparql;
 import foo.dbgroup.mongo.entity.GenericQuery;
+import foo.dbgroup.mongo.entity.SchemaLOD;
 
 public class BuildSchemaLodGraph {
 
 	BuildExtractSchemaQuery schemaQuery;
 	QueryExecutorRemote queryExe;
 	AbstractGraph graph;
+	private EndPointSparql endpoint;
 	
 	
-	public BuildSchemaLodGraph(EndPointSparql e) {
+	public BuildSchemaLodGraph() {
 		super();
-		queryExe = new QueryExecutorRemote();
-		queryExe.setDataset(e.getUri(), e.getNome());
-		schemaQuery = new BuildExtractSchemaQuery();
+		
+		
 		graph = new MultiGraph("Test");
 		
 		graph.addAttribute("ui.antialias");
 		graph.addAttribute("layout.gravity", 0.03);
 		graph.addAttribute("layout.quality", 4);
-		
+		graph.addAttribute("ui.stylesheet", styleSheet);
+        graph.setAutoCreate(true);
+        graph.setStrict(false);
 		
 	}
 	
 	
 	
-	public void generateGraph(){
-		
+	public void generateGraph(EndPointSparql e){
+		queryExe = new QueryExecutorRemote();
+		queryExe.setDataset(e.getUri(), e.getNome());
+		schemaQuery = new BuildExtractSchemaQuery();
 
-        graph.addAttribute("ui.stylesheet", styleSheet);
-        graph.setAutoCreate(true);
-        graph.setStrict(false);
+        
         
         Viewer viewer = graph.display();
        
 		GenericQuery startQuery =schemaQuery.start();
 		queryExe.setQuery(startQuery);
-		queryExe.executeQuery();
+//		queryExe.executeQuery();
 		List<ClassLOD> clasLod=queryExe.createClass();
 //		for(ClassLOD c : clasLod)System.out.println(c.getClas());
 		List<GenericQuery> secondLQueries=schemaQuery.secondLQuery(clasLod);
 		for(GenericQuery current : secondLQueries){
 			queryExe.setQuery(current);
-			queryExe.executeQuery();
+//			queryExe.executeQuery();
 			for(EdgeLOD c:queryExe.addNode(clasLod)){
 				System.out.println(c.toString());
 				addEdge(c);//add to graph
@@ -78,10 +86,32 @@ public class BuildSchemaLodGraph {
 		}
 	}
 	
+	/*
+	 * Draw SchemaLOD tacked from Mongo
+	 */
+	
+	public void drowGraphFromMongo( SchemaLOD schem){
+
+		
+		SchemaLOD schema=schem;
+		
+		if(schema!=null){
+			
+	        
+	        Viewer viewer = graph.display();
+	        
+	        for(EdgeLOD current : schema.getEdges()){
+	        	if(!current.isError())addEdge(current);
+	        }
+		}
+	}
+	
 	
 	private void addEdge(EdgeLOD c) {
 	
-		
+		c.setsClass(sbstringClass(c.getsClass()));
+		c.setoClass(sbstringClass(c.getoClass()));
+		c.setProperty(sbstringClass(c.getProperty()));
 		
 		
 //		cur=new HashMap<String,Object>();
@@ -121,6 +151,26 @@ public class BuildSchemaLodGraph {
 		if(graph.getEdge(c.getProperty())!=null){
 			graph.getEdge(c.getProperty()).setAttribute("ui.label", c.getProperty());
 		}
+	}
+
+	/*
+	 * Return the final part of the uri ( Class or propriety )
+	 */
+
+	private String sbstringClass(String uri) {
+		int ind=uri.lastIndexOf('/');
+		return uri.substring(ind+1, uri.length());
+	}
+
+
+	public EndPointSparql getEndpoint() {
+		return endpoint;
+	}
+
+
+
+	public void setEndpoint(EndPointSparql endpoint) {
+		this.endpoint = endpoint;
 	}
 
 

@@ -41,11 +41,13 @@ public class QueryExecutorRemote extends GenericQueryExecutorImp<String> {
 		try{
 			Query sparql = QueryFactory.create(this.getQuery().getQuery());
 			System.out.println(this.getQuery().getQuery());
+			System.out.println(dataset);
 			QueryExecution qe = QueryExecutionFactory.sparqlService(dataset, sparql);
 			qe.setTimeout(50000, TimeUnit.MILLISECONDS);
 			ResultSet curresult=qe.execSelect();
 			setResultSet(curresult);
 		}catch(Exception e){
+			error=true;
 			System.out.println(e.getMessage());
 			String trace="";
 			for ( StackTraceElement ele : e.getStackTrace()){
@@ -64,6 +66,13 @@ public class QueryExecutorRemote extends GenericQueryExecutorImp<String> {
 			html+=e.getMessage();
 			setResultSet(null);
 		}
+	}
+
+	@Override
+	@Deprecated
+	public void executeQuery(boolean inject) {
+		this.executeQuery();
+		
 	}
 
 	

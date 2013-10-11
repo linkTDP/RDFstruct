@@ -12,7 +12,7 @@ import foo.dbgroup.mongo.entity.EndPointSparql;
 public class TestGraphGeneration {
 	
 	public static void main(String[] args) {
-		System.setProperty("gs.ui.renderer", "org.graphstream.ui.j2dviewer.J2DGraphRenderer");
+		System.setProperty("org.graphstream.ui.renderer", "org.graphstream.ui.j2dviewer.J2DGraphRenderer");
 		Mongo mongo= null;
 		try {
 			mongo = new Mongo();
@@ -30,9 +30,9 @@ public class TestGraphGeneration {
 		
 		EndPointSparql e=dao.findOne("_id", 1);
 		
-		BuildSchemaLodGraph a = new BuildSchemaLodGraph(e);
+		BuildSchemaLodGraph a = new BuildSchemaLodGraph();
 		
-		a.generateGraph();
+		a.generateGraph(e);
 		
 	}
 	

@@ -55,4 +55,8 @@ public interface GenericQueryExecutor<T> {
 	
 	public List<MyTriple> getTriple();
 	
+	abstract void executeQuery();
+	
+	abstract void executeQuery(boolean inject);
+	
 }
